@@ -17,6 +17,11 @@ public class UserDao {
 		users.add(new User(3,"aman",LocalDate.now().minusYears(30)));
 		users.add(new User(4,"prince",LocalDate.now().minusYears(31)));
 		users.add(new User(5,"satyam",LocalDate.now().minusYears(33)));
+		users.add(new User(6,"Adity",LocalDate.now().minusYears(25)));
+		users.add(new User(7,"Vivek",LocalDate.now().minusYears(40)));
+		users.add(new User(8,"PJ",LocalDate.now().minusYears(21)));
+		users.add(new User(9,"Call Center",LocalDate.now().minusYears(30)));
+		users.add(new User(10,"Rahul Gandhi",LocalDate.now().minusYears(35)));
 	}
 	
 	 ErrorHandling eh=new ErrorHandling();
