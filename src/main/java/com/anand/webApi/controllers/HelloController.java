@@ -18,12 +18,6 @@ public class HelloController {
 	@RequestMapping(method=RequestMethod.GET,path="/hello/{name}")
 	public String hello(@PathVariable String name)
 	{
-		String na="por";
-		String na1="bsdk";
-		if(name==na || name==na1)
-		{
-			return "Hello and Welcome";
-		}
 		return "Hello and welcome "+name;
 	}
 	
