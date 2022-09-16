@@ -18,7 +18,7 @@ public class HelloController {
 	@RequestMapping(method=RequestMethod.GET,path="/hello/{name}")
 	public String hello(@PathVariable String name)
 	{
-		return "Hello and welcome to view page "+name;
+		return "Hello and welcome to new startup mr. "+name;
 	}
 	
 	@RequestMapping(method=RequestMethod.GET,path="/user")
