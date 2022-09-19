@@ -7,7 +7,7 @@ import javax.validation.constraints.Size;
 public class User {
 	
 	public Integer id;
-	@Size(min=2)
+	@Size(min=2,message="Name should have atleast two characters")
 	public String name;
 	public LocalDate birthDay;
 	public User(Integer id, String name, LocalDate birthDay) {
