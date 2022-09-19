@@ -2,6 +2,8 @@ package com.anand.webApi.controllers;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,7 +36,7 @@ public class HelloController {
 	}
 	
 	@RequestMapping(method=RequestMethod.POST,path="/user")
-	public String saveList(@RequestBody User user)
+	public String saveList(@Valid @RequestBody User user)
 	{
 		userdao.saveUser(user);	
 		return "Data Inserted Sucessfully";
