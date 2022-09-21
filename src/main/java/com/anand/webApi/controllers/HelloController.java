@@ -23,13 +23,13 @@ public class HelloController {
 		return "Hello and welcome to new startup mr. "+name;
 	}
 	
-	@RequestMapping(method=RequestMethod.GET,path="/user")
+	@RequestMapping(method=RequestMethod.GET,path="/")
 	public List<User> getList()
 	{
 		return userdao.userList();		
 	}
 	
-	@RequestMapping(method=RequestMethod.GET,path="/user/{id}")
+	@RequestMapping(method=RequestMethod.GET,path="/{id}")
 	public User getUserById(@PathVariable int id)
 	{
 		return userdao.userById(id);
